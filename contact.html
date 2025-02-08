@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        padding-top: 40px;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .navbar {
+        background-color: #343a40;
+      }
+      .navbar-brand span {
+        color: rgb(255, 140, 0);
+      }
+      .hero-section {
+        background-image: url("bg1.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 153, 0);
+        text-align: center;
+      }
+      .product-card img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        background-color: transparent;
+      }
+      footer {
+        background-color: #343a40;
+        padding: 40px 0;
+      }
+      footer a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: rgb(0, 115, 255);
+      }
+
+      .contact-section {
+        padding: 50px 0;
+      }
+      .contact-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Blog<span>LV</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container contact-section">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="contact-card">
+            <h3 class="text-center mb-4">Contact Us</h3>
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="footer mt-auto mt-3 py-3 bg-body-tertiary"
+      style="background: azure"
+    >
+      <div class="container">
+        <main class="flex-shrink-0">
+          <div class="row">
+            <div class="col-lg-4">
+              <h5>Tentang Kami</h5>
+              <p>
+                blog lv adalah sebuah toko perabotan yang menjual furniture
+                sehari-hari dan di toko kami terjamin semua kualitas furniture
+                nya tahan lama
+              </p>
+            </div>
+
+            <div class="col-lg-4">
+              <h5 style="margin-left: 40px">Kontak</h5>
+              <ul class="list-unstyled">
+                <li>Email: Blf@gmail.com</li>
+                <li>Telepon: +62 123 456 789</li>
+                <li>Alamat: Jl. RayaCondet. 123, Jakarta</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4">
+              <h5 style="margin-left: 40px">Ikuti Kami</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none">Facebook</a></li>
+                <li><a href="#" class="text-decoration-none">Instagram</a></li>
+                <li><a href="#" class="text-decoration-none">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </footer>
+  </body>
+</html>

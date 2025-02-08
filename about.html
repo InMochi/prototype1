@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        padding-top: 40px;
+        margin: 0;
+      }
+      .navbar {
+        background-color: #343a40;
+      }
+      .navbar-brand span {
+        color: rgb(255, 140, 0);
+      }
+      .hero-section {
+        background: url("bg2.jpg") center/cover;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+      }
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .hero-section h1,
+      .hero-section p {
+        position: relative;
+        z-index: 1;
+      }
+      .about-section img {
+        border-radius: 10px;
+      }
+      .features-section .feature-box {
+        text-align: center;
+      }
+      footer {
+        background-color: #343a40;
+        padding: 40px 0;
+      }
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: rgb(0, 115, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Blog<span>LV</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="container my-5 about-section">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Tentang Kami</h2>
+          <p>
+            BlogLV adalah toko furniture yang menghadirkan berbagai produk
+            berkualitas tinggi untuk melengkapi rumah Anda. Kami berkomitmen
+            menyediakan perabotan terbaik dengan desain modern dan daya tahan
+            luar biasa.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="bg.jpg" alt="Tentang Kami" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container my-5 features-section">
+      <h2 class="text-center mb-4">Mengapa Memilih Kami?</h2>
+      <div class="row">
+        <div class="col-md-4 feature-box">
+          <img
+            style="border-radius: 50%"
+            src="display1.jpg"
+            alt="Kualitas Premium"
+            width="80"
+            height="80px"
+          />
+          <h4>Kualitas Premium</h4>
+          <p>Produk kami dibuat dengan bahan terbaik yang tahan lama.</p>
+        </div>
+        <div class="col-md-4 feature-box">
+          <img
+            style="border-radius: 50%"
+            src="display2.jpg"
+            alt="Desain Elegan"
+            width="80"
+            height="80px"
+          />
+          <h4>Desain Elegan</h4>
+          <p>Desain modern yang cocok untuk berbagai gaya interior.</p>
+        </div>
+        <div class="col-md-4 feature-box">
+          <img
+            style="border-radius: 50%"
+            src="display3.jpg"
+            alt="Harga Terjangkau"
+            width="80"
+            height="80px"
+          />
+          <h4>Harga Terjangkau</h4>
+          <p>Kami menawarkan harga yang bersaing dengan kualitas terbaik.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-white">
+        <div class="row">
+          <div class="col-lg-4">
+            <h5>Tentang Kami</h5>
+            <p>
+              BlogLV adalah toko perabotan yang menjual furniture berkualitas
+              dengan harga terbaik.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h5>Kontak</h5>
+            <ul class="list-unstyled">
+              <li>Email: Blf@gmail.com</li>
+              <li>Telepon: +62 123 456 789</li>
+              <li>Alamat: Jl. Raya Condet 123, Jakarta</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5>Ikuti Kami</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
